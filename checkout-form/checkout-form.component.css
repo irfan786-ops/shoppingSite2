@@ -1,0 +1,23 @@
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.invalid-feedback {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.btn {
+  margin-top: 20px;
+}
+.green-tick {
+  color: green;
+  font-size: 1.2em;
+  margin-right: 5px;
+}

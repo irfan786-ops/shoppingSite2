@@ -1,0 +1,25 @@
+<div class="container">
+    <h1>Your Shopping Cart</h1>
+    <div *ngIf="cartItems.length === 0">
+        <p>Your cart is empty.</p>
+    </div>
+    <div *ngFor="let item of cartItems; let i = index" class="card mb-4">
+        <img style="width: 130px;" [src]="item.Iphone || item.BabyCar || item.HpDesktop || item.Shoes || item.Apple || item.Batman"
+            alt="Product image" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title"><strong>Category: </strong> {{ item.Category }}</h5>
+            <p class="card-text"><strong>Description: </strong>{{ item.description }}</p>
+            <p class="card-text"><strong>Price:</strong> ₹ {{ item.price }}</p>
+            <button class="btn btn-danger mt-2" (click)="removeCart(i)">Remove Cart</button>
+        </div>
+  
+    </div>
+    <div class="card-button">
+        <button class="btn btn-danger" (click)="removeallCart()">Clear Cart</button>
+        <button class="cart btn btn-primary" (click)="onBack()">Back</button>
+    </div>
+    <div class="total-price mt-4">
+        <h2>Total Price: ₹ {{ getTotalPrice() }}</h2>
+        <button class="btn btn-place-order mt-2" (click)="checkoutFormDetails()">Place Order</button>
+      </div>
+</div>

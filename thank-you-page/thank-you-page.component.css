@@ -1,0 +1,44 @@
+/* Container for the message */
+.thank-you-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  /* Circle container for the green tick */
+  .green-tick {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    background-color: #28a745;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+  }
+  
+  /* Tick symbol inside the green circle */
+  .tick-symbol {
+    color: #fff;
+    font-size: 50px; /* Adjust size as needed */
+    font-weight: bold;
+  }
+  
+  /* Heading style */
+  .thank-you-message h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+  }
+  

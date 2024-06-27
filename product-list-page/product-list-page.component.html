@@ -1,0 +1,15 @@
+<div class="container">
+    <h1 class="heading text-center ">Shopping Site</h1>
+  <div class="row">
+    <div *ngFor="let item of productListPage" class="col-md-4 mb-4">
+      <div class="card" (click)="viewProductDetail(item.id)">
+        <img [src]="getImageUrl(item)" alt="Product image" class="card-img-top" *ngIf="getImageUrl(item)">
+        <div class="card-body">
+          <h5 class="card-title"><strong>Category: </strong> {{item.Category}}</h5>
+          <p class="card-text"><strong>Description: </strong>{{item.description}}</p>
+          <p class="card-text"><strong>Price:</strong> ₹ {{item.price}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
