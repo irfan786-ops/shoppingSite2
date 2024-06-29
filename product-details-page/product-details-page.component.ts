@@ -31,7 +31,7 @@ export class ProductDetailsPageComponent implements OnInit {
     const products = [
       {
         id: 1,
-        price: 5000,
+        price: 100000,
         Iphone: "https://assets.sangeethamobiles.com/product_img/14511/1694715009_2Y4.jpg",
         Category: "Electronics",
         description: "Apple M2 Chip With 8-Core CPU, 10-Core GPU, 16-Core Neural Engine 8GB Unified Memory"
